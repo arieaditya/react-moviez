@@ -1,12 +1,9 @@
 # react-moviez
 Movie library built with React and Styled Components
-
-<img src="./preview.png" alt="Movie app preview">
-
 ## 👨🏻‍💻 Development
 
 ```bash
-$ git clone https://github.com/imtrent/movie-library.git
+$ git clone https://github.com/arieaditya/react-moviez
 $ npm install
 $ npm start
 ```
