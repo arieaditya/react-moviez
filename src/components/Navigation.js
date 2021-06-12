@@ -115,6 +115,7 @@ const Navigation = ({ routeChange }) => {
                         opacity: 1;
                         visibility: visible;
                         pointer-events: all;
+                        background-color: ${props => props.theme.titleColor};
                     }
 
                     &:before {

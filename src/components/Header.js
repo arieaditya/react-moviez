@@ -52,7 +52,7 @@ const Header = props => {
         &:focus {
             outline: none;
         }
-        transition: all .5s ease;
+        transition: all 2s ease-in-out;
     `;
 
     const Header = styled.section`
@@ -63,7 +63,7 @@ const Header = props => {
         width: 100%;
         background-color: ${props => props.theme.titleColor};
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-        transition: all .5s ease;
+        transition: all 2s ease-in-out;
     `;
 
     const Logo = styled.h1`
@@ -73,7 +73,7 @@ const Header = props => {
         color: ${props => props.theme.pageBackground};
         margin: 0;
         z-index: 9999;
-    
+        transition: all 2s ease-in-out;
         &:hover {
             color: $primary-color;
         }

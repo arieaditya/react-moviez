@@ -5,6 +5,7 @@ import Loading from './../components/utils/Loading';
 import MovieList from '../components/MovieList';
 import Pagination from '../components/Pagination';
 import AppError from './../components/utils/AppError';
+import styled from "styled-components";
 
 const Browse = props => {
     const [movies, setMovies] = useState([]);
@@ -50,12 +51,32 @@ const Browse = props => {
         );
     }
 
+    const Title = styled.section`
+        font-size: 3rem;
+        text-transform: capitalize;
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: ${props => props.theme.pageBackground};
+        margin: 0;
+        z-index: 10;
+        transition: all 2s ease-in-out;
+        &:hover {
+            color: $primary-color;
+        }
+
+        span {
+            margin: -3px 5px 0 0;
+            font-size: 3.2rem;
+        }
+    `;
+
     return (
         <div className="wrapper">
             <div className="container">
                 <div className="content">
                     <div className="heading">
-                        <h1>{typeFormatted} Movies</h1>
+                        <Title>{typeFormatted} Movies</Title>
                         <h2 className="page-desc">
                             Browse thousands of {type.replace(/_/g, ' ')} movies
                             through TMDb API.
