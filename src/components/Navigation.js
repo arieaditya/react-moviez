@@ -13,8 +13,11 @@ const Navigation = ({ routeChange }) => {
     };
 
     const NavigationMenu = styled.section`
+        order: 2;
+        margin-top: 3rem;
         ul {
             display: flex;
+            flex-direction: column;
             li {
                 @media screen and (min-width: 1024px) {
                     margin-right: 3rem;

@@ -57,7 +57,7 @@ const Header = props => {
 
     const Header = styled.section`
         position: fixed;
-        z-index: 9999;
+        z-index: 25;
         top: 0;
         left: 0;
         width: 100%;

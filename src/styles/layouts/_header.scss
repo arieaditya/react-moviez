@@ -242,6 +242,7 @@ nav ul {
     transition: 0.27s ease;
     overflow-y: scroll;
     overflow-x: hidden;
+    z-index: 20;
 
     a,
     p {
@@ -305,13 +306,8 @@ nav ul {
     &.active {
         div {
             &:first-child {
-                transform: rotate(-45deg) translate(0px, px);
+                transform: rotate(-45deg) translate(0px, 0px);
             }
-
-            // &:nth-child(2) {
-            //     width: 0;
-            //     opacity: 0;
-            // }
 
             &:last-child {
                 transform: rotate(45deg) translate(-5px, -6px);
