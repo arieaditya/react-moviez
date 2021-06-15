@@ -1,5 +1,6 @@
 # react-moviez
-Movie library built with React and Styled Components
+Movie library with dark mode (in progress), built with React and Styled Components. 
+
 ## 👨🏻‍💻 Development
 
 ```bash
